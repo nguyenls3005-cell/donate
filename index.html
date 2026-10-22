@@ -1,0 +1,1938 @@
+
+
+<!DOCTYPE html>
+
+<html lang="vi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<meta name="theme-color" content="#f7f8f4">
+
+<title>Ủng hộ LSNguyen</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+:root {
+
+  --bg: #f7f8f4;
+
+  --white: #ffffff;
+
+  --text: #252920;
+
+  --muted: #858b7f;
+
+  --line: #e8ece3;
+
+  --green: #557b3d;
+
+  --soft: #eff5e9;
+
+}
+
+* {
+
+  box-sizing: border-box;
+
+}
+
+html {
+
+  scroll-behavior: smooth;
+
+  scroll-padding-top: 20px;
+
+}
+
+body {
+
+  margin: 0;
+
+  color: var(--text);
+
+  background: var(--bg);
+
+  font-family: "Be Vietnam Pro", sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+
+}
+
+button, input {
+
+  font: inherit;
+
+}
+
+button {
+
+  cursor: pointer;
+
+  -webkit-tap-highlight-color: transparent;
+
+}
+
+a {
+
+  color: inherit;
+
+  text-decoration: none;
+
+}
+
+.page {
+
+  width: min(100% - 30px, 1000px);
+
+  margin: auto;
+
+}
+
+/* THANH ĐIỀU HƯỚNG */
+
+.nav {
+
+  min-height: 78px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 12px;
+
+  border-bottom: 1px solid var(--line);
+
+}
+
+.brand {
+
+  font-size: 15px;
+
+  font-weight: 800;
+
+  letter-spacing: -.5px;
+
+}
+
+.brand small {
+
+  display: block;
+
+  margin-top: 5px;
+
+  color: var(--muted);
+
+  font-size: 9px;
+
+  font-weight: 500;
+
+  letter-spacing: 1.4px;
+
+}
+
+.nav-right {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+}
+
+.nav-link {
+
+  color: var(--muted);
+
+  font-size: 11px;
+
+}
+
+.status {
+
+  padding: 10px 13px;
+
+  border: 1px solid var(--line);
+
+  border-radius: 100px;
+
+  background: white;
+
+  color: var(--green);
+
+  font-size: 9px;
+
+}
+
+/* GIỚI THIỆU */
+
+.hero {
+
+  padding: 65px 0 40px;
+
+  max-width: 760px;
+
+}
+
+.eyebrow {
+
+  margin-bottom: 20px;
+
+  color: var(--green);
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.6px;
+
+}
+
+h1 {
+
+  margin: 0;
+
+  font-size: clamp(38px, 7vw, 68px);
+
+  line-height: 1.17;
+
+  letter-spacing: -3px;
+
+}
+
+h1 em {
+
+  color: var(--green);
+
+  font-style: normal;
+
+}
+
+.hero-description {
+
+  max-width: 510px;
+
+  margin-top: 20px;
+
+  color: #74796e;
+
+  font-size: 13px;
+
+  line-height: 2;
+
+}
+
+.hero-bottom {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-top: 24px;
+
+  color: var(--muted);
+
+  font-size: 10px;
+
+}
+
+.hero-tag {
+
+  padding: 10px 14px;
+
+  border-radius: 100px;
+
+  background: var(--soft);
+
+  color: var(--green);
+
+}
+
+/* BỐ CỤC */
+
+.layout {
+
+  display: grid;
+
+  grid-template-columns: 1.05fr .95fr;
+
+  gap: 20px;
+
+  align-items: start;
+
+  padding-bottom: 48px;
+
+}
+
+.card {
+
+  min-width: 0;
+
+  padding: 28px;
+
+  border: 1px solid var(--line);
+
+  border-radius: 30px;
+
+  background: var(--white);
+
+  box-shadow: 0 12px 40px rgba(30, 40, 20, .035);
+
+}
+
+.card + .card {
+
+  margin-top: 18px;
+
+}
+
+.card-top {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 10px;
+
+}
+
+.kicker {
+
+  color: var(--muted);
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.3px;
+
+}
+
+.number {
+
+  color: #9aa091;
+
+  font-size: 10px;
+
+}
+
+.card h2 {
+
+  margin: 17px 0 0;
+
+  font-size: 19px;
+
+  line-height: 1.55;
+
+  letter-spacing: -.5px;
+
+}
+
+/* TIẾN ĐỘ */
+
+.raised {
+
+  margin: 28px 0 22px;
+
+}
+
+.raised-label {
+
+  margin-bottom: 9px;
+
+  color: var(--muted);
+
+  font-size: 11px;
+
+}
+
+.amount {
+
+  overflow-wrap: anywhere;
+
+  font-size: clamp(27px, 4vw, 39px);
+
+  font-weight: 800;
+
+  letter-spacing: -1.5px;
+
+}
+
+.amount small {
+
+  color: var(--green);
+
+  font-size: 12px;
+
+  letter-spacing: 0;
+
+}
+
+.percent {
+
+  color: var(--green);
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+}
+
+.progress-wrap {
+
+  height: 9px;
+
+  margin-top: 17px;
+
+  overflow: hidden;
+
+  border-radius: 100px;
+
+  background: #edf0e8;
+
+}
+
+.progress-bar {
+
+  width: 0;
+
+  height: 100%;
+
+  border-radius: inherit;
+
+  background: linear-gradient(90deg, #6a914e, #b9d99f);
+
+  transition: width .7s ease;
+
+}
+
+.progress-caption {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 8px;
+
+  margin-top: 12px;
+
+  color: var(--muted);
+
+  font-size: 10px;
+
+}
+
+.progress-caption strong {
+
+  color: var(--text);
+
+}
+
+.divider {
+
+  height: 1px;
+
+  margin: 24px 0;
+
+  background: var(--line);
+
+}
+
+.stat-row {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 10px;
+
+  font-size: 12px;
+
+}
+
+.stat-row span {
+
+  color: var(--muted);
+
+}
+
+.note {
+
+  margin-top: 21px;
+
+  padding: 17px;
+
+  border-radius: 21px;
+
+  background: #f4f7ef;
+
+  color: #71776a;
+
+  font-size: 11px;
+
+  line-height: 1.9;
+
+}
+
+.note strong {
+
+  color: #35432d;
+
+}
+
+/* BIỂU MẪU */
+
+.section-heading {
+
+  margin: 15px 0 24px;
+
+}
+
+.section-heading h2 {
+
+  margin: 0 0 8px;
+
+  font-size: 23px;
+
+  letter-spacing: -.7px;
+
+}
+
+.section-heading p {
+
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 11px;
+
+  line-height: 1.9;
+
+}
+
+.field {
+
+  margin-bottom: 20px;
+
+}
+
+.label {
+
+  display: block;
+
+  margin-bottom: 10px;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+}
+
+/* KHẮC PHỤC Ô NHẬP TRÊN ĐIỆN THOẠI */
+
+.input {
+
+  display: block;
+
+  width: 100%;
+
+  min-width: 0;
+
+  min-height: 54px;
+
+  padding: 15px 16px;
+
+  border: 1px solid #e0e6da;
+
+  border-radius: 17px;
+
+  outline: none;
+
+  background: #fbfcf9;
+
+  color: #252920;
+
+  font-size: 16px;
+
+  line-height: 1.5;
+
+  -webkit-appearance: none;
+
+  appearance: none;
+
+  -webkit-user-select: text;
+
+  user-select: text;
+
+  pointer-events: auto;
+
+  touch-action: manipulation;
+
+  transition: border-color .2s, box-shadow .2s, background .2s;
+
+}
+
+.input::placeholder {
+
+  color: #a0a598;
+
+  opacity: 1;
+
+}
+
+.input:focus {
+
+  border-color: #87a96e;
+
+  background: #fff;
+
+  box-shadow: 0 0 0 4px rgba(135, 169, 110, .15);
+
+}
+
+/* Ô TIỀN DÙNG TEXT ĐỂ NHẬN CHẠM ỔN ĐỊNH */
+
+#customAmount {
+
+  position: relative;
+
+  z-index: 2;
+
+  isolation: isolate;
+
+  cursor: text;
+
+  -webkit-user-select: text;
+
+  user-select: text;
+
+  pointer-events: auto;
+
+  touch-action: manipulation;
+
+}
+
+/* CHỌN SỐ TIỀN */
+
+.money-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 10px;
+
+  margin-bottom: 20px;
+
+}
+
+.money {
+
+  position: relative;
+
+  z-index: 1;
+
+  min-width: 0;
+
+  min-height: 72px;
+
+  padding: 14px 12px;
+
+  border: 1px solid var(--line);
+
+  border-radius: 18px;
+
+  background: white;
+
+  color: var(--text);
+
+  text-align: left;
+
+  pointer-events: auto;
+
+  touch-action: manipulation;
+
+  transition: background .2s, border-color .2s, transform .2s;
+
+}
+
+.money strong {
+
+  display: block;
+
+  margin-bottom: 6px;
+
+  font-size: 13px;
+
+}
+
+.money span {
+
+  display: block;
+
+  color: var(--muted);
+
+  font-size: 9px;
+
+  line-height: 1.6;
+
+}
+
+.money.active {
+
+  border-color: #8cab76;
+
+  background: #f0f6e9;
+
+}
+
+.money.active strong {
+
+  color: var(--green);
+
+}
+
+.money:active {
+
+  transform: scale(.98);
+
+}
+
+.primary {
+
+  display: block;
+
+  width: 100%;
+
+  min-height: 54px;
+
+  padding: 15px;
+
+  border: none;
+
+  border-radius: 19px;
+
+  background: var(--text);
+
+  color: white;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  touch-action: manipulation;
+
+  transition: background .2s, transform .2s;
+
+}
+
+.primary:active {
+
+  transform: scale(.99);
+
+}
+
+.primary:disabled {
+
+  opacity: .65;
+
+}
+
+.disclaimer {
+
+  margin: 14px 0 0;
+
+  color: var(--muted);
+
+  font-size: 10px;
+
+  line-height: 1.9;
+
+  text-align: center;
+
+}
+
+/* DANH SÁCH NGƯỜI ỦNG HỘ */
+
+.donors-title {
+
+  margin: 16px 0 8px;
+
+  font-size: 22px;
+
+  letter-spacing: -.7px;
+
+}
+
+.donors-description {
+
+  margin: 0 0 20px;
+
+  color: var(--muted);
+
+  font-size: 11px;
+
+  line-height: 1.9;
+
+}
+
+.donor-list {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 11px;
+
+}
+
+.donor {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+
+  min-width: 0;
+
+  padding: 12px;
+
+  border: 1px solid #eff1eb;
+
+  border-radius: 19px;
+
+  animation: appear .35s ease both;
+
+}
+
+.avatar {
+
+  display: grid;
+
+  width: 42px;
+
+  height: 42px;
+
+  flex-shrink: 0;
+
+  place-items: center;
+
+  border-radius: 15px;
+
+  background: var(--soft);
+
+  color: var(--green);
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+}
+
+.donor-info {
+
+  flex: 1;
+
+  min-width: 0;
+
+}
+
+.donor-name {
+
+  overflow-wrap: anywhere;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+}
+
+.donor-time {
+
+  margin-top: 5px;
+
+  color: var(--muted);
+
+  font-size: 10px;
+
+}
+
+.donor-amount {
+
+  flex-shrink: 0;
+
+  color: var(--green);
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+}
+
+.empty {
+
+  padding: 23px 12px;
+
+  border: 1px dashed #dfe4d8;
+
+  border-radius: 21px;
+
+  color: var(--muted);
+
+  font-size: 11px;
+
+  line-height: 1.9;
+
+  text-align: center;
+
+}
+
+/* CHÂN TRANG */
+
+.footer {
+
+  padding: 26px 0 34px;
+
+  border-top: 1px solid var(--line);
+
+}
+
+.footer-inner {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+
+  gap: 17px;
+
+}
+
+.footer-brand {
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+
+}
+
+.footer-copy {
+
+  color: var(--muted);
+
+  font-size: 10px;
+
+  line-height: 1.9;
+
+}
+
+.footer-links {
+
+  display: flex;
+
+  gap: 16px;
+
+  color: var(--muted);
+
+  font-size: 10px;
+
+}
+
+/* THÔNG BÁO */
+
+.toast {
+
+  position: fixed;
+
+  z-index: 9999;
+
+  right: 15px;
+
+  bottom: max(18px, env(safe-area-inset-bottom));
+
+  left: 15px;
+
+  width: fit-content;
+
+  max-width: calc(100% - 30px);
+
+  margin: auto;
+
+  padding: 15px 19px;
+
+  border: 1px solid var(--line);
+
+  border-radius: 19px;
+
+  background: white;
+
+  color: var(--text);
+
+  font-size: 12px;
+
+  line-height: 1.7;
+
+  box-shadow: 0 12px 40px #00000012;
+
+  opacity: 0;
+
+  visibility: hidden;
+
+  transform: translateY(12px);
+
+  transition: .25s;
+
+  pointer-events: none;
+
+}
+
+.toast.show {
+
+  opacity: 1;
+
+  visibility: visible;
+
+  transform: translateY(0);
+
+}
+
+/* ANIMATION KHI CUỘN */
+
+.reveal {
+
+  opacity: 1;
+
+  transform: none;
+
+}
+
+.js-motion .reveal {
+
+  opacity: 0;
+
+  transform: translateY(22px);
+
+  transition: opacity .6s ease, transform .6s ease;
+
+}
+
+.js-motion .reveal.visible {
+
+  opacity: 1;
+
+  transform: translateY(0);
+
+}
+
+@keyframes appear {
+
+  from {
+
+    opacity: 0;
+
+    transform: translateY(8px);
+
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+  }
+
+}
+
+/* MÀN HÌNH NHỎ */
+
+@media (max-width: 680px) {
+
+  .page {
+
+    width: calc(100% - 24px);
+
+  }
+
+  .nav {
+
+    min-height: 70px;
+
+  }
+
+  .nav-right {
+
+    gap: 8px;
+
+  }
+
+  .nav-link {
+
+    display: none;
+
+  }
+
+  .status {
+
+    padding: 9px;
+
+    font-size: 8px;
+
+  }
+
+  .hero {
+
+    padding: 43px 0 28px;
+
+  }
+
+  h1 {
+
+    font-size: clamp(34px, 9vw, 48px);
+
+    letter-spacing: -2px;
+
+  }
+
+  .hero-description {
+
+    font-size: 12px;
+
+  }
+
+  .layout {
+
+    grid-template-columns: minmax(0, 1fr);
+
+    gap: 15px;
+
+  }
+
+  .card {
+
+    padding: 21px;
+
+    border-radius: 27px;
+
+  }
+
+  .section-heading h2 {
+
+    font-size: 22px;
+
+  }
+
+  .footer-inner {
+
+    align-items: flex-start;
+
+    flex-direction: column;
+
+  }
+
+}
+
+@media (max-width: 350px) {
+
+  .card {
+
+    padding: 17px;
+
+  }
+
+  .money {
+
+    padding: 12px 9px;
+
+  }
+
+  .money strong {
+
+    font-size: 12px;
+
+  }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+
+    scroll-behavior: auto;
+
+  }
+
+  *, *::before, *::after {
+
+    animation: none !important;
+
+    transition: none !important;
+
+  }
+
+  .js-motion .reveal {
+
+    opacity: 1;
+
+    transform: none;
+
+  }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="page">
+
+  <nav class="nav reveal">
+
+    <a class="brand" href="#">
+
+      LSNGUYEN
+
+
+    </a>
+
+    <div class="nav-right">
+
+      <a class="nav-link" href="#support">Ủng hộ</a>
+
+      <a class="nav-link" href="#donors">Cộng đồng</a>
+
+    </div>
+
+  </nav>
+
+  <header class="hero reveal">
+
+    <div class="eyebrow">MỖI SỰ ỦNG HỘ ĐỀU CÓ Ý NGHĨA</div>
+
+    <h1>Chia sẻ một chút.<br><em>Tiếp sức hành trình.</em></h1>
+
+    <p class="hero-description">
+
+      Cảm ơn bạn đã ghé thăm không gian của mình.
+
+      Sự ủng hộ của bạn giúp mình có thêm động lực ra nhiều app mới,
+
+      sáng tạo và xây dựng những dự án thú vị hơn mỗi ngày.
+
+    </p>
+
+    <div class="hero-bottom">
+
+      <span class="hero-tag">CẢM ƠN BẠN ĐÃ Ở ĐÂY</span>
+
+      <span>Được thực hiện bởi LSNguyen</span>
+
+    </div>
+
+  </header>
+
+  <main class="layout">
+
+    <div class="left-column">
+
+      <section class="card reveal">
+
+        <div class="card-top">
+
+          <span class="kicker">TỔNG QUAN QUYÊN GÓP</span>
+
+          <span class="number">01 / 03</span>
+
+        </div>
+
+        <h2>Mỗi sự ủng hộ đều có ý nghĩa.</h2>
+
+        <div class="raised">
+
+          <div class="raised-label">Tổng số tiền đã ghi nhận</div>
+
+          <div class="amount" id="raised">0 <small>VNĐ</small></div>
+
+        </div>
+
+        <div class="card-top">
+
+          <span class="kicker">TIẾN ĐỘ MỤC TIÊU</span>
+
+          <span class="percent" id="percent">0%</span>
+
+        </div>
+
+        <div class="progress-wrap" id="progress"
+
+             role="progressbar" aria-label="Tiến độ ủng hộ"
+
+             aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+
+          <div class="progress-bar" id="bar"></div>
+
+        </div>
+
+        <div class="progress-caption">
+
+          <span>Còn thiếu <strong id="remaining">10.000.000 ₫</strong></span>
+
+          <span>Mục tiêu <strong>10 triệu</strong></span>
+
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="stat-row">
+
+          <span>Số lượt ủng hộ</span>
+
+          <strong id="count">0 lượt</strong>
+
+        </div>
+
+        <div class="note">
+
+          <strong>Cảm ơn bạn thật nhiều!</strong><br>
+
+          Dù lớn hay nhỏ, mỗi sự ủng hộ đều đáng quý và giúp mình tiến gần hơn đến mục tiêu.
+
+        </div>
+
+      </section>
+
+      <section class="card reveal" id="donors">
+
+        <div class="card-top">
+
+          <span class="kicker">CỘNG ĐỒNG ĐỒNG HÀNH</span>
+
+          <span class="number">03 / 03</span>
+
+        </div>
+
+        <h2 class="donors-title">Những người đồng hành.</h2>
+
+        <p class="donors-description">
+
+          Cảm ơn mọi người đã dành sự quan tâm và ủng hộ cho hành trình này.
+
+        </p>
+
+        <div class="donor-list" id="donorList">
+
+          <div class="empty">Chưa có lượt ủng hộ nào. Bạn có thể là người đầu tiên!</div>
+
+        </div>
+
+      </section>
+
+    </div>
+
+    <div class="right-column" id="support">
+
+      <section class="card reveal">
+
+        <div class="card-top">
+
+          <span class="kicker">GỬI LỜI ỦNG HỘ</span>
+
+          <span class="number">02 / 03</span>
+
+        </div>
+
+        <div class="section-heading">
+
+          <h2>Gửi một chút yêu thương.</h2>
+
+          <p>Nhập tên hiển thị, chọn số tiền và gửi lời động viên nhé.</p>
+
+        </div>
+
+        <form id="donateForm" novalidate>
+
+          <div class="field">
+
+            <label class="label" for="name">Tên hiển thị của bạn</label>
+
+            <input
+
+              class="input"
+
+              id="name"
+
+              name="name"
+
+              type="text"
+
+              maxlength="40"
+
+              autocomplete="name"
+
+              placeholder="Nhập tên của bạn..."
+
+              required
+
+            >
+
+          </div>
+
+          <div class="field">
+
+            <div class="label">Chọn số tiền ủng hộ</div>
+
+            <div class="money-grid">
+
+              <button class="money" type="button" data-amount="20000">
+
+                <strong>20.000 ₫</strong>
+
+                <span>Một lời động viên</span>
+
+              </button>
+
+              <button class="money" type="button" data-amount="50000">
+
+                <strong>50.000 ₫</strong>
+
+                <span>Tiếp thêm động lực</span>
+
+              </button>
+
+              <button class="money active" type="button" data-amount="100000">
+
+                <strong>100.000 ₫</strong>
+
+                <span>Đồng hành cùng mình</span>
+
+              </button>
+
+              <button class="money" type="button" data-amount="200000">
+
+                <strong>200.000 ₫</strong>
+
+                <span>Ủng hộ đặc biệt</span>
+
+              </button>
+
+            </div>
+
+          </div>
+
+          <div class="field">
+
+            <label class="label" for="customAmount">Hoặc nhập số tiền khác (VNĐ)</label>
+
+            <input
+
+              class="input"
+
+              id="customAmount"
+
+              name="amount"
+
+              type="text"
+
+              inputmode="numeric"
+
+              pattern="[0-9., ]*"
+
+              autocomplete="off"
+
+              autocapitalize="off"
+
+              spellcheck="false"
+
+              enterkeyhint="done"
+
+              value="100000"
+
+              placeholder="Chạm để nhập số tiền..."
+
+              aria-label="Nhập số tiền bằng Việt Nam đồng"
+
+              required
+
+            >
+
+          </div>
+
+          <button class="primary" id="submitButton" type="submit">
+
+            Gửi lời ủng hộ
+
+          </button>
+
+        </form>
+
+        <p class="disclaimer">
+
+          Đây là bản demo giao diện.<br>
+
+          Chưa có giao dịch hoặc thanh toán bằng tiền thật.
+
+        </p>
+
+      </section>
+
+    </div>
+
+  </main>
+
+  <footer class="footer reveal">
+
+    <div class="footer-inner">
+
+      <div>
+
+        <div class="footer-brand">LSNGUYEN</div>
+
+        <div class="footer-copy" style="margin-top:7px">
+
+          Được xây dựng bằng sự tò mò và tâm huyết.
+
+        </div>
+
+      </div>
+
+      <div class="footer-links">
+
+        <a href="https://nguyenls3005-cell.github.io/Web-LSNguyen/"
+
+           target="_blank" rel="noopener noreferrer">Trang cá nhân</a>
+
+        <a href="#support">Ủng hộ</a>
+
+      </div>
+
+      <div class="footer-copy">
+
+        © <span id="year"></span> LSNguyen. Bảo lưu mọi quyền.
+
+      </div>
+
+    </div>
+
+  </footer>
+
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+
+(function () {
+
+  "use strict";
+
+  /* MỖI BIẾN CHỈ KHAI BÁO MỘT LẦN */
+
+  const GOAL = 10000000;
+
+  const donors = [];
+
+  let raised = 0;
+
+  let count = 0;
+
+  let toastTimer = null;
+
+  const $ = function (id) {
+
+    return document.getElementById(id);
+
+  };
+
+  const form = $("donateForm");
+
+  const nameInput = $("name");
+
+  const amountInput = $("customAmount");
+
+  const submitButton = $("submitButton");
+
+  const moneyButtons = Array.from(document.querySelectorAll(".money"));
+
+  /* ĐỊNH DẠNG TIỀN */
+
+  function formatMoney(value) {
+
+    return Math.round(value).toLocaleString("vi-VN") + " ₫";
+
+  }
+
+  function parseAmount(value) {
+
+    // Chấp nhận số có dấu chấm, dấu phẩy hoặc khoảng trắng phân cách.
+
+    const normalized = String(value).replace(/[.,\s]/g, "");
+
+    if (!normalized || !/^\d+$/.test(normalized)) {
+
+      return NaN;
+
+    }
+
+    const result = Number(normalized);
+
+    return Number.isSafeInteger(result) ? result : NaN;
+
+  }
+
+  /* THÔNG BÁO */
+
+  function notify(message) {
+
+    const toast = $("toast");
+
+    toast.textContent = message;
+
+    toast.classList.add("show");
+
+    if (toastTimer !== null) {
+
+      clearTimeout(toastTimer);
+
+    }
+
+    toastTimer = setTimeout(function () {
+
+      toast.classList.remove("show");
+
+      toastTimer = null;
+
+    }, 3000);
+
+  }
+
+  /* TIẾN ĐỘ */
+
+  function updateProgress() {
+
+    const percentage = Math.min(100, raised / GOAL * 100);
+
+    const raisedElement = $("raised");
+
+    raisedElement.replaceChildren(
+
+      document.createTextNode(
+
+        Math.round(raised).toLocaleString("vi-VN") + " "
+
+      )
+
+    );
+
+    const currency = document.createElement("small");
+
+    currency.textContent = "VNĐ";
+
+    raisedElement.appendChild(currency);
+
+    $("percent").textContent =
+
+      percentage.toLocaleString("vi-VN", {
+
+        maximumFractionDigits: 1
+
+      }) + "%";
+
+    $("bar").style.width = percentage + "%";
+
+    $("progress").setAttribute("aria-valuenow", String(Math.round(percentage)));
+
+    $("remaining").textContent =
+
+      formatMoney(Math.max(0, GOAL - raised));
+
+    $("count").textContent = count + " lượt";
+
+  }
+
+  /* ĐỒNG BỘ NÚT CHỌN TIỀN */
+
+  function updateSelectedButton() {
+
+    const amount = parseAmount(amountInput.value);
+
+    moneyButtons.forEach(function (button) {
+
+      const selected = Number(button.dataset.amount) === amount;
+
+      button.classList.toggle("active", selected);
+
+      button.setAttribute("aria-pressed", selected ? "true" : "false");
+
+    });
+
+  }
+
+  moneyButtons.forEach(function (button) {
+
+    button.addEventListener("click", function () {
+
+      amountInput.value = button.dataset.amount;
+
+      updateSelectedButton();
+
+      // Cập nhật giao diện và sự kiện nhập liệu.
+
+      amountInput.dispatchEvent(
+
+        new Event("input", { bubbles: true })
+
+      );
+
+    });
+
+  });
+
+  amountInput.addEventListener("input", updateSelectedButton);
+
+  /* DANH SÁCH NGƯỜI ỦNG HỘ */
+
+  function renderDonors() {
+
+    const list = $("donorList");
+
+    list.replaceChildren();
+
+    if (donors.length === 0) {
+
+      const empty = document.createElement("div");
+
+      empty.className = "empty";
+
+      empty.textContent =
+
+        "Chưa có lượt ủng hộ nào. Bạn có thể là người đầu tiên!";
+
+      list.appendChild(empty);
+
+      return;
+
+    }
+
+    donors.slice(0, 8).forEach(function (donor, index) {
+
+      const row = document.createElement("div");
+
+      row.className = "donor";
+
+      row.style.animationDelay = Math.min(index * 50, 250) + "ms";
+
+      const avatar = document.createElement("div");
+
+      avatar.className = "avatar";
+
+      avatar.textContent = Array.from(donor.name)[0].toUpperCase();
+
+      const info = document.createElement("div");
+
+      info.className = "donor-info";
+
+      const donorName = document.createElement("div");
+
+      donorName.className = "donor-name";
+
+      donorName.textContent = donor.name;
+
+      const donorTime = document.createElement("div");
+
+      donorTime.className = "donor-time";
+
+      donorTime.textContent = "Vừa gửi lời ủng hộ";
+
+      info.append(donorName, donorTime);
+
+      const amount = document.createElement("div");
+
+      amount.className = "donor-amount";
+
+      amount.textContent = formatMoney(donor.amount);
+
+      row.append(avatar, info, amount);
+
+      list.appendChild(row);
+
+    });
+
+  }
+
+  /* GỬI FORM DEMO */
+
+  form.addEventListener("submit", function (event) {
+
+    event.preventDefault();
+
+    const name = nameInput.value.trim();
+
+    const amount = parseAmount(amountInput.value);
+
+    if (!name) {
+
+      notify("Bạn vui lòng nhập tên hiển thị nhé.");
+
+      nameInput.focus();
+
+      return;
+
+    }
+
+    if (!Number.isSafeInteger(amount) ||
+
+        amount < 1000 ||
+
+        amount > 1000000000) {
+
+      notify("Vui lòng nhập số tiền từ 1.000 đến 1.000.000.000 VNĐ.");
+
+      amountInput.focus();
+
+      return;
+
+    }
+
+    submitButton.disabled = true;
+
+    submitButton.textContent = "Đang cập nhật...";
+
+    try {
+
+      donors.unshift({
+
+        name: name,
+
+        amount: amount
+
+      });
+
+      raised += amount;
+
+      count += 1;
+
+      updateProgress();
+
+      renderDonors();
+
+      form.reset();
+
+      amountInput.value = "100000";
+
+      updateSelectedButton();
+
+      notify("Đã ghi nhận lượt ủng hộ demo. Chưa có thanh toán thật.");
+
+    } catch (error) {
+
+      notify("Đã xảy ra lỗi. Vui lòng thử lại.");
+
+    } finally {
+
+      submitButton.disabled = false;
+
+      submitButton.textContent = "Gửi lời ủng hộ";
+
+    }
+
+  });
+
+  /* NĂM HIỆN TẠI */
+
+  $("year").textContent = new Date().getFullYear();
+
+  /* ANIMATION KHI CUỘN */
+
+  function initScrollAnimation() {
+
+    const elements = document.querySelectorAll(".reveal");
+
+    if (!("IntersectionObserver" in window) ||
+
+        window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+
+      elements.forEach(function (element) {
+
+        element.classList.add("visible");
+
+      });
+
+      return;
+
+    }
+
+    document.documentElement.classList.add("js-motion");
+
+    const observer = new IntersectionObserver(function (entries) {
+
+      entries.forEach(function (entry) {
+
+        if (entry.isIntersecting) {
+
+          entry.target.classList.add("visible");
+
+          observer.unobserve(entry.target);
+
+        }
+
+      });
+
+    }, {
+
+      threshold: 0.05,
+
+      rootMargin: "0px 0px -20px 0px"
+
+    });
+
+    elements.forEach(function (element, index) {
+
+      element.style.transitionDelay = (index % 3) * 60 + "ms";
+
+      observer.observe(element);
+
+    });
+
+  }
+
+  /* KHỞI TẠO */
+
+  updateProgress();
+
+  updateSelectedButton();
+
+  renderDonors();
+
+  initScrollAnimation();
+
+})();
+
+</script>
+
+</body>
+
+</html>
